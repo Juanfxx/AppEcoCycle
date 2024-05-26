@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ImageView para el logo -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ecocycle_logo"
+        android:layout_marginTop="32dp" />
+
+    <!-- TextView para el nombre de la app -->
+    <TextView
+        android:id="@+id/textViewAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EcoCycle"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/imageViewLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000" />
+
+    <!-- Contenedor principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="16dp">
+
+        <!-- Texto descriptivo para el campo de correo electrónico -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese correo"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Campo de correo electrónico -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Texto descriptivo para el campo de contraseña -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese contraseña"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Campo de contraseña -->
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón de inicio de sesión (verde) -->
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar sesión"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Texto "¿Olvidaste tu contraseña?" -->
+        <TextView
+            android:id="@+id/textViewForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Olvidaste tu contraseña?"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold" />
+
+        <!-- Texto "¿No tienes una cuenta? Regístrate" -->
+        <TextView
+            android:id="@+id/textViewSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿No tienes una cuenta? Regístrate"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

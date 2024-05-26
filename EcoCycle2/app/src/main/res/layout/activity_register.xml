@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- ImageView para el logo -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ecocycle_logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp" />
+
+    <!-- TextView para el nombre de la app -->
+    <TextView
+        android:id="@+id/textViewAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EcoCycle"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="#000000" />
+
+    <!-- TextView para crear cuenta -->
+    <TextView
+        android:id="@+id/textViewCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crea tu cuenta"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textColor="#000000" />
+
+    <!-- TextView para ingresar correo -->
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tu correo electrónico"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="#000000" />
+
+    <!-- EditText para el correo -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="8dp" />
+
+    <!-- TextView para ingresar contraseña -->
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tu contraseña"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="#000000" />
+
+    <!-- EditText para la contraseña -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:layout_marginTop="8dp" />
+
+    <!-- TextView para ingresar nombre de usuario -->
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa nombre de usuario"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="#000000" />
+
+    <!-- EditText para el nombre de usuario -->
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de usuario"
+        android:layout_marginTop="8dp" />
+
+    <!-- Layout horizontal para los botones -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal">
+
+        <!-- Botón de volver al menú -->
+        <Button
+            android:id="@+id/buttonBackToMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volver al Menú"
+            android:textSize="14sp"
+            android:padding="8dp" />
+
+        <!-- Espacio entre los botones -->
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Botón de registrar -->
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:textSize="14sp"
+            android:padding="8dp" />
+    </LinearLayout>
+</LinearLayout>
+
+
