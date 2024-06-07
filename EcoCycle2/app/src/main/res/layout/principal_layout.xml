@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TextView para el nombre de la app -->
+    <TextView
+        android:id="@+id/textViewAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EcoCycle"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <!-- ImageView para la foto de perfil -->
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/inicio"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewAppName"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextView para la frase -->
+    <TextView
+        android:id="@+id/textViewQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reciclar convierte cosas en otras cosas, lo cual casi es magia."
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_below="@id/imageViewProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón para comenzar a reciclar -->
+    <Button
+        android:id="@+id/buttonStartRecycling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comienza a reciclar"
+        android:layout_below="@id/textViewQuote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Botón para los puntos de reciclaje -->
+    <Button
+        android:id="@+id/buttonRecyclingPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntos de reciclaje"
+        android:textSize="12sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="48dp"
+        android:layout_below="@id/buttonStartRecycling"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Botón para los recursos educativos -->
+    <Button
+        android:id="@+id/buttonEducationalResources"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recursos educativos"
+        android:textSize="12sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="48dp"
+        android:layout_below="@id/buttonStartRecycling"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="24dp" />
+
+</RelativeLayout>
+

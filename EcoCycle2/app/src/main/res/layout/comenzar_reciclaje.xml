@@ -1,0 +1,120 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- ImageView para el logo -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ecocycle_logo"
+        android:layout_marginTop="32dp" />
+
+    <!-- TextView para el nombre de la app -->
+    <TextView
+        android:id="@+id/textViewAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EcoCycle"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/imageViewLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textViewSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Qué reciclaste?"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Carton"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo" />
+
+    <EditText
+        android:id="@+id/editTextTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reutilizable"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad" />
+
+    <EditText
+        android:id="@+id/editTextCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="500 gramos"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha" />
+
+    <EditText
+        android:id="@+id/editTextFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="23/05/2024"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resumen" />
+
+    <EditText
+        android:id="@+id/editTextResumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cuéntanos tu experiencia"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:gravity="top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubicación" />
+
+    <EditText
+        android:id="@+id/editTextUbicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Agregar Ubicación"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonPublish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publicar" />
+</LinearLayout>
+
